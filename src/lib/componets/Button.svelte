@@ -4,6 +4,7 @@
 	export let size = 'md';
 	export let disabled = false;
 	export let fullWidth = false;
+	export let href = undefined;
 
 	const variants = {
 		primary: 'bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500',
@@ -30,6 +31,20 @@
   `;
 </script>
 
-<button {type} {disabled} class="={classes}" on:click>
-	<slot />
-</button>
+{#if href}
+  <a
+    {href}
+    class="inline-flex items-center justify-center rounded-full px-6 py-2 text-sm font-medium transition-all duration-300 {variant === 'primary'
+      ? 'bg-gradient-to-r from-[#E84545] to-[#904E95] text-white hover:opacity-90'
+      : 'border border-white/20 bg-transparent text-white hover:border-white/40 hover:bg-white/5'}"
+  >
+    <slot />
+  </a>
+{:else}
+  <button
+    {type} {disabled} class={`{classes}`}
+    on:click
+  >
+    <slot />
+  </button>
+{/if}
