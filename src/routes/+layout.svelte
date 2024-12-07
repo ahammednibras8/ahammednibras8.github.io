@@ -1,5 +1,8 @@
 <script>
   import '../app.css';
+  import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
+
+  injectSpeedInsights();
 </script>
 
 <div class="min-h-screen bg-[#161513] font-sans text-white">
