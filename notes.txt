@@ -1,0 +1,54 @@
+<script>
+  import { onMount } from "svelte";
+  import { gsap } from "gsap";
+
+  let hero; // For the hero section element
+
+  onMount(() => {
+    // Animating the hero section on page load
+    gsap.fromTo(
+      hero,
+      { opacity: 0, y: 50 },
+      { opacity: 1, y: 0, duration: 1.5, ease: "power4.out" }
+    );
+  });
+</script>
+
+<section bind:this={hero} class="relative flex items-center justify-center bg-gradient-to-r from-indigo-600 to-blue-500 h-screen text-white px-6 py-12">
+  <!-- Background Image -->
+  <div class="absolute inset-0 bg-cover bg-center opacity-50" style="background-image: url('/your-photo.jpg');"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 text-center max-w-2xl">
+    <h1 class="text-5xl sm:text-6xl font-bold leading-tight mb-4">
+      Ahammed Nibras
+    </h1>
+    <p class="text-xl sm:text-2xl mb-6">
+      Building seamless and innovative digital experiences with Svelte and Tailwind.
+    </p>
+
+    <!-- Contact Button -->
+    <a href="#contact-form">
+      <button class="px-8 py-3 bg-indigo-700 hover:bg-indigo-800 text-lg font-semibold rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+        Contact Me
+      </button>
+    </a>
+  </div>
+</section>
+
+<!-- Contact Form Section (Hidden initially, shown on button click) -->
+<section id="contact-form" class="py-16 bg-white text-gray-900">
+  <div class="max-w-lg mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+    <form action="#" method="POST">
+      <div class="space-y-4">
+        <input type="text" name="name" placeholder="Your Name" class="w-full px-6 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500" required />
+        <input type="email" name="email" placeholder="Your Email" class="w-full px-6 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500" required />
+        <textarea name="message" placeholder="Your Message" rows="5" class="w-full px-6 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500" required></textarea>
+      </div>
+      <button type="submit" class="mt-4 px-8 py-3 bg-indigo-700 hover:bg-indigo-800 text-white font-semibold rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+        Send Message
+      </button>
+    </form>
+  </div>
+</section>
