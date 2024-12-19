@@ -3,6 +3,7 @@
 	import Hero from '../components/Hero.svelte';
 	import { fadeIn } from '../utils/animations';
 	import Skill from '../components/Skill.svelte';
+	import Projects from '../components/Projects.svelte';
 
 	let hero: HTMLElement | null = null; // Correctly typed reference to the hero section
 
@@ -17,5 +18,5 @@
 <section bind:this={hero}>
 	<Hero />
 	<Skill />
-	
+	<Projects />
 </section>
