@@ -37,9 +37,7 @@
 
 <section class="bg-gray-50 px-6 py-20">
 	<div class="mx-auto max-w-7xl" bind:this={container}>
-		<h2 class="mb-10 text-center text-4xl font-bold text-black md:text-5xl">
-			Featured Projects
-		</h2>
+		<h2 class="mb-10 text-center text-4xl font-bold text-black md:text-5xl">Featured Projects</h2>
 		<p class="mx-auto mb-12 max-w-2xl text-center text-lg text-gray-600">
 			Explore my top projects showcasing expertise in cross-platform development and modern
 			technologies.
