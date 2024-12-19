@@ -17,4 +17,5 @@
 <section bind:this={hero}>
 	<Hero />
 	<Skill />
+	
 </section>

@@ -27,10 +27,10 @@
           </div>
           <div class="hidden sm:block sm:ml-6">
             <div class="flex space-x-6">
-              <a href="#home" class="text-black hover:text-indigo-600 px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 ease-in-out">Home</a>
-              <a href="#about" class="text-black hover:text-indigo-600 px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 ease-in-out">About</a>
-              <a href="#portfolio" class="text-black hover:text-indigo-600 px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 ease-in-out">Portfolio</a>
-              <a href="#contact" class="text-black hover:text-indigo-600 px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 ease-in-out">Contact</a>
+              <a href="#home" class="text-black hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 ease-in-out">Home</a>
+              <a href="#about" class="text-black hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 ease-in-out">About</a>
+              <a href="#portfolio" class="text-black hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 ease-in-out">Portfolio</a>
+              <a href="#contact" class="text-black hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 ease-in-out">Contact</a>
             </div>
           </div>
         </div>
@@ -41,10 +41,10 @@
     {#if isMenuOpen}
       <div class="sm:hidden block bg-black bg-opacity-70 transition-all duration-500 ease-in-out transform opacity-100 translate-y-0 z-50">
         <div class="px-2 pt-2 pb-3 space-y-4">
-          <a href="#home" class="text-white hover:text-indigo-600 block px-3 py-2 rounded-md text-lg font-medium">Home</a>
-          <a href="#about" class="text-white hover:text-indigo-600 block px-3 py-2 rounded-md text-lg font-medium">About</a>
-          <a href="#portfolio" class="text-white hover:text-indigo-600 block px-3 py-2 rounded-md text-lg font-medium">Portfolio</a>
-          <a href="#contact" class="text-white hover:text-indigo-600 block px-3 py-2 rounded-md text-lg font-medium">Contact</a>
+          <a href="#home" class="text-white hover:text-gray-600 block px-3 py-2 rounded-md text-lg font-medium">Home</a>
+          <a href="#about" class="text-white hover:text-gray-600 block px-3 py-2 rounded-md text-lg font-medium">About</a>
+          <a href="#portfolio" class="text-white hover:text-gray-600 block px-3 py-2 rounded-md text-lg font-medium">Portfolio</a>
+          <a href="#contact" class="text-white hover:text-gray-600 block px-3 py-2 rounded-md text-lg font-medium">Contact</a>
         </div>
       </div>
     {/if}
