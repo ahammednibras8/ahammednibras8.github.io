@@ -50,9 +50,9 @@
 							>About</a
 						>
 						<a
-							href="portfolio"
+							href="projects"
 							class="rounded-md px-3 py-2 text-base font-medium text-black transition-colors duration-300 ease-in-out hover:text-gray-600"
-							>Portfolio</a
+							>Projects</a
 						>
 						<a
 							href="contact"
