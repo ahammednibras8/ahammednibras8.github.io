@@ -40,22 +40,22 @@
 				<div class="hidden sm:ml-6 sm:block">
 					<div class="flex space-x-6">
 						<a
-							href="#home"
+							href="/"
 							class="rounded-md px-3 py-2 text-base font-medium text-black transition-colors duration-300 ease-in-out hover:text-gray-600"
 							>Home</a
 						>
 						<a
-							href="#about"
+							href="about"
 							class="rounded-md px-3 py-2 text-base font-medium text-black transition-colors duration-300 ease-in-out hover:text-gray-600"
 							>About</a
 						>
 						<a
-							href="#portfolio"
+							href="portfolio"
 							class="rounded-md px-3 py-2 text-base font-medium text-black transition-colors duration-300 ease-in-out hover:text-gray-600"
 							>Portfolio</a
 						>
 						<a
-							href="#contact"
+							href="contact"
 							class="rounded-md px-3 py-2 text-base font-medium text-black transition-colors duration-300 ease-in-out hover:text-gray-600"
 							>Contact</a
 						>
