@@ -10,7 +10,11 @@
 		form.method = 'POST';
 
 		// Append form fields
-		[{ name: 'name', value: name }, { name: 'email', value: email }, { name: 'message', value: message }].forEach(({ name, value }) => {
+		[
+			{ name: 'name', value: name },
+			{ name: 'email', value: email },
+			{ name: 'message', value: message }
+		].forEach(({ name, value }) => {
 			const input = document.createElement('input');
 			input.type = 'hidden';
 			input.name = name;
@@ -33,7 +37,8 @@
 	<div class="mx-auto max-w-3xl text-center">
 		<h2 class="mb-6 text-4xl font-semibold text-black">Contact Me</h2>
 		<p class="mb-12 text-lg text-gray-600">
-			Feel free to reach out to discuss your project, collaboration opportunities, or any questions you have.
+			Feel free to reach out to discuss your project, collaboration opportunities, or any questions
+			you have.
 		</p>
 
 		<form on:submit={handleSubmit} class="space-y-6">
