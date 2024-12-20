@@ -5,6 +5,7 @@
 	import Skill from '../components/Skill.svelte';
 	import Projects from '../components/Projects.svelte';
 	import Blog from '../components/Blog.svelte';
+	import Testimonial from '../components/Testimonial.svelte';
 
 	let hero: HTMLElement | null = null; // Correctly typed reference to the hero section
 
@@ -21,4 +22,5 @@
 	<Skill />
 	<Projects />
 	<Blog />
+	<!-- <Testimonial /> -->
 </section>
